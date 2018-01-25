@@ -22,7 +22,8 @@ export default Route.extend({
     this.controller.set('viewModify', false)
   },
   @action logout() {
-    this.session.signOut().then(r => {  
+    this.session.signOut().then(r => {
+      UIkit.offcanvas('#offcanvas-nav-primary').hide();  
       return this.refresh();
     })
   }

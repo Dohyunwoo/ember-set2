@@ -30,9 +30,9 @@ export default Route.extend({
       return r;
     }).then(r => {
       this.controller.set('visible', false);
-      if(r.is9pler){
-        this.session.redirectUserTo('signin');
-      }
+      this.session.redirectUserTo('signin');
+      // if(r.is9pler){
+      // }
     }).catch(c => {
       alert(c.message);
       this.controller.set('visible', false);

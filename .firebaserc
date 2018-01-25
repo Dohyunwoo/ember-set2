@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "dohyub-ember-init"
+    "default": "reflex-app-dev",
+    "staging": "npl-dev-fbbd9"
   }
 }

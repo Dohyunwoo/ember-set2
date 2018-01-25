@@ -20,6 +20,9 @@ export default DS.Model.extend({
 
   // domain specific
   requests: DS.hasMany('request'),
-  name: DS.attr('string'),
-  posts: DS.hasMany('post')
+
+  // @autocomputed('email', 'emailVerified') is9pler(email, emailVerified) {
+  //   //manage-flex-orders restriction
+  //   return (email.endsWith('@9ple.com') && emailVerified);
+  // }
 });
